@@ -1,0 +1,47 @@
+benchmark_ticker: QQQ
+market_timezone: America/New_York
+
+# Full research grid: intraday reaction + post-news drift.
+lookbacks:
+  - 5min
+  - 15min
+  - 30min
+  - 1h
+  - 2h
+  - 4h
+  - 1d
+  - 3d
+  - 5d
+  - 10d
+  - 20d
+
+horizons:
+  - 1min
+  - 5min
+  - 15min
+  - 30min
+  - 1h
+  - 2h
+  - 4h
+  - 1d
+  - 3d
+  - 5d
+  - 10d
+  - 20d
+
+signal:
+  half_life_fraction: 0.5
+  min_relevance: 0.0
+  min_novelty: 0.0
+
+returns:
+  abnormal_method: market_adjusted  # market_adjusted or beta_adjusted
+  beta_window_bars: 3900
+  beta_min_periods: 390
+
+validation:
+  n_folds: 5
+  bootstrap_samples: 500
+  bootstrap_seed: 42
+  hac_maxlags: 5
+  min_observations: 30
