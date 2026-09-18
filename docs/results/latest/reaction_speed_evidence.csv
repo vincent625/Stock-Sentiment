@@ -1,0 +1,6 @@
+study,start_min,end_min,interpretation
+Hard earnings/dividend announcements,1,10,Most immediately tradable response concentrated in first few price changes; simple rule returns dissipate ~5–10m.
+Intraday investor sentiment pressure,1,30,Pricing pressure reported around the first ~30m; partial reversal afterward.
+High-frequency media sentiment,30,120,Half-hour sentiment predicts intraday returns; effect reported over subsequent intraday windows.
+LLM-scored dividend news,1,120,Abnormal-return predictability strongest immediately after release and within first ~2h.
+Residual event/news drift (older studies),1440,7200,Some positive/negative event effects decay over multi-day horizons; context dependent.
